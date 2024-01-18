@@ -18,10 +18,12 @@
 {
   "compilerOptions": {
     "target": "es6",
+    "outDir": "./dist",
     "module": "commonjs",
     "strictNullChecks": true
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
 
 * 트랜스파일러 실행
