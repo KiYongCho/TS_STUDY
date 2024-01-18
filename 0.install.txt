@@ -1,0 +1,28 @@
+* 필요 도구
+- node
+- npm
+- web browser
+- IDE (like VSCode)
+- VSCode 플러그인 설치
+  eslint플러그인 > 파일-기본설정-설정 > eslint.dire 검색 > settings.json에서 편집 > "eslint.workingDirectories": [{"mode": "auto"}] 추가
+  night owl 플러그인
+  material icon theme 플러그인
+  path intellisense 플러그인
+  todo highlight 플러그인
+
+* npm 초기화 및 typescript 설치
+- (터미널) npm init -y
+- (터미널) npm install typescript -D
+
+* tsconfig.json 파일 생성
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strictNullChecks": true
+  },
+  "include": ["**/*.ts"]
+}
+
+* 트랜스파일러 실행
+- (터미널) tsc -w
