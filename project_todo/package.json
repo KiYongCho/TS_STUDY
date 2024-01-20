@@ -1,7 +1,6 @@
 {
   "name": "project_todo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "axios": "^1.6.5",
     "typescript": "^5.3.3"
-  }
+  },
+  "description": ""
 }
