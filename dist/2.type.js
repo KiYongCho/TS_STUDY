@@ -2,8 +2,8 @@
 // 타입표기(:)  : type annotation
 let greeting = 'hello';
 // string
-let str = 'hello';
-// str = 10;
+let hello = 'hello';
+// hello = 10;
 // number
 let num = 10;
 // num = '안녕';

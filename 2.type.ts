@@ -4,8 +4,8 @@
 let greeting: string = 'hello';
 
 // string
-let str: string = 'hello';
-// str = 10;
+let hello: string = 'hello';
+// hello = 10;
 
 // number
 let num: number = 10;
@@ -52,7 +52,7 @@ getStr('홍길동');
 
 // 인자의 개수와 파라미터의 개수가 같아야 함
 // void : 반환값이 없음
-function getInfo(name: string, age: int, hobby: string): void {
+function getInfo(name: string, age: number, hobby: string): void {
     console.log(name, age, hobby);
 }
 getInfo('홍길동', 20, '축구');
@@ -61,7 +61,7 @@ getInfo('홍길동', 20, '축구');
 console.log();
 
 // optional parameter (파라미터에 해당하는 인자가 없을때 ?)
-function printInfo(name: string, age: int, hobby?: string): void {
+function printInfo(name: string, age: number, hobby?: string): void {
     console.log(name, age, hobby);
 }
 printInfo('홍길동', 20, '축구');
