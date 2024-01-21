@@ -83,3 +83,41 @@ console.log(int1);
 //     name: number;
 // }
 console.log();
+/* 이넘 (enum)  타입 */
+// 여러개의 상수를 정의하기 위한 타입
+// 기본적으로 선언된 순서대로 0, 1, 2 ... 값을 가짐
+var Planet;
+(function (Planet) {
+    Planet[Planet["MERCURY"] = 0] = "MERCURY";
+    Planet[Planet["VENUS"] = 1] = "VENUS";
+    Planet[Planet["EARTH"] = 2] = "EARTH";
+    Planet[Planet["MARS"] = 3] = "MARS";
+})(Planet || (Planet = {}));
+var earth = Planet.EARTH;
+var mars = Planet.MARS;
+console.log(earth, mars);
+/*
+"use strict";
+var Planet;
+(function (Planet) {
+    Planet[Planet["MERCURY"] = 0] = "MERCURY";
+    Planet[Planet["VENUS"] = 1] = "VENUS";
+    Planet[Planet["EARTH"] = 2] = "EARTH";
+    Planet[Planet["MARS"] = 3] = "MARS";
+})(Planet || (Planet = {}));
+*/
+// 초기값 할당
+var Planet2;
+(function (Planet2) {
+    Planet2[Planet2["MERCURY"] = 0] = "MERCURY";
+    Planet2[Planet2["VENUS"] = 1] = "VENUS";
+    Planet2[Planet2["EARTH"] = 2] = "EARTH";
+    Planet2[Planet2["MARS"] = 3] = "MARS";
+})(Planet2 || (Planet2 = {}));
+var Planet3;
+(function (Planet3) {
+    Planet3["MERCURY"] = "\uC218\uC131";
+    Planet3["VENUS"] = "\uAE08\uC131";
+    Planet3["EARTH"] = "\uC9C0\uAD6C";
+    Planet3["MARS"] = "\uD654\uC131";
+})(Planet3 || (Planet3 = {}));

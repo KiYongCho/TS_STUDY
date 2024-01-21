@@ -187,6 +187,55 @@ console.log(int1);
 console.log();
 
 
+/* 이넘 (enum)  타입 */
+// 여러개의 상수를 정의하기 위한 타입
+// 기본적으로 선언된 순서대로 0, 1, 2 ... 값을 가짐
+enum Planet {
+    MERCURY,
+    VENUS,
+    EARTH,
+    MARS    
+}
+const earth = Planet.EARTH;
+const mars = Planet.MARS;
+console.log(earth, mars);
+
+/*
+"use strict";
+var Planet;
+(function (Planet) {
+    Planet[Planet["MERCURY"] = 0] = "MERCURY";
+    Planet[Planet["VENUS"] = 1] = "VENUS";
+    Planet[Planet["EARTH"] = 2] = "EARTH";
+    Planet[Planet["MARS"] = 3] = "MARS";
+})(Planet || (Planet = {}));
+*/
+
+// 초기값 할당
+enum Planet2 {
+    MERCURY = 0,
+    VENUS = 1,
+    EARTH = 2,
+    MARS = 3    
+}
+enum Planet3 {
+    MERCURY = '수성',
+    VENUS = '금성',
+    EARTH = '지구',
+    MARS = '화성'    
+}
+
+// const enum
+// JS로 변환되는 코드의 양을 줄일 수 있다.
+const enum Planet4 {
+    MERCURY = '수성',
+    VENUS = '금성',
+    EARTH = '지구',
+    MARS = '화성'    
+}
+
+
+
 
 
 
