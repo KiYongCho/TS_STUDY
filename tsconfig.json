@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "allowJS": true,
+    "checkJS": true,
+    "target": "ES2015",
+    "lib": ["ES2018", "DOM" "DOM.Iterable"],
     "module": "commonjs",
-    "strictNullChecks": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "strict": true
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules", "dist"]

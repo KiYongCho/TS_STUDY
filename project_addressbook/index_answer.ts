@@ -1,5 +1,3 @@
-// npm i --save-dev  @types/es6-promise
-
 interface PhoneNumberDictionary {
   [phone: string]: {
     num: number;

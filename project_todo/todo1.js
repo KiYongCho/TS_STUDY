@@ -1,4 +1,13 @@
-let todos = [
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+var todos = [
     { id: 1, title: "아침먹기", completed: true },
     { id: 2, title: "TS공부", completed: true },
     { id: 3, title: "점심먹기", completed: false }
@@ -9,7 +18,7 @@ function getTodos() {
 }
 // 조회
 function getTodo(paramId) {
-    return (todos.filter(todo => todo.id === paramId))[0];
+    return (todos.filter(function (todo) { return todo.id === paramId; }))[0];
 }
 // 등록
 function registTodo(paramTodo) {
@@ -19,9 +28,9 @@ function registTodo(paramTodo) {
 }
 // 수정
 function updateTodo(paramTodo) {
-    const id = paramTodo.id;
+    var id = paramTodo.id;
     if (isExistedTodo(id)) {
-        return [...deleteTodo(id), paramTodo];
+        return __spreadArray(__spreadArray([], deleteTodo(id), true), [paramTodo], false);
     }
     else {
         return todos;
@@ -30,7 +39,7 @@ function updateTodo(paramTodo) {
 // 삭제
 function deleteTodo(paramId) {
     if (isExistedTodo(paramId)) {
-        return todos = todos.filter(todo => todo.id !== paramId);
+        return todos = todos.filter(function (todo) { return todo.id !== paramId; });
     }
     else {
         return todos;
@@ -38,7 +47,7 @@ function deleteTodo(paramId) {
 }
 // id 존재 여부 확인
 function isExistedTodo(paramId) {
-    return todos.some(todo => todo.id === paramId);
+    return todos.some(function (todo) { return todo.id === paramId; });
 }
 // 목록
 console.log(getTodos());
