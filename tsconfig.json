@@ -3,7 +3,7 @@
     "allowJS": true,
     "checkJS": true,
     "target": "ES2015",
-    "lib": ["ES2018", "DOM" "DOM.Iterable"],
+    "lib": ["ES2018", "DOM", "DOM.Iterable"],
     "module": "commonjs",
     "noImplicitAny": true,
     "strict": true
