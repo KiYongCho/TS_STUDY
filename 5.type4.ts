@@ -107,6 +107,3 @@ let in3: In2<string>;
 let in4: In2<number>;
 in3 = in4; // data는 string
 in4 = in3; // data는 number
-
-
-/* 타입 모듈 */
