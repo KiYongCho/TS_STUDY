@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "allowJS": true,
-    "checkJS": true,
+    "checkJs": true,
     "target": "ES2015",
     "lib": ["ES2018", "DOM", "DOM.Iterable"],
     "module": "commonjs",
