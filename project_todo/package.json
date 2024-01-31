@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/es6-promise": "^3.3.0",
     "axios": "^1.6.5",
     "typescript": "^5.3.3"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/es6-promise": "^3.3.0"
+  }
 }
