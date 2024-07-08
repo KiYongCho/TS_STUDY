@@ -1,36 +1,37 @@
+"use strict";
 /* TS의 type */
 // 타입표기(:)  : type annotation
-var greeting = 'hello';
+let greeting = 'hello';
 // string
-var hello = 'hello';
+let hello = 'hello';
 // hello = 10;
 // number
-var num = 10;
+let num = 10;
 // num = '안녕';
 // boolean
-var bool = true;
+let bool = true;
 // bool = 100;
 // object
-var obj = {
+let obj = {
     name: '홍길동',
     age: 20
 };
 // obj = '홍길동';
 // array
-var arr1 = ['홍길동', '강감찬', '이순신'];
-var arr2 = ['홍길동', '강감찬', '이순신']; // generic
+let arr1 = ['홍길동', '강감찬', '이순신'];
+let arr2 = ['홍길동', '강감찬', '이순신']; // generic
 // tuple
 // 고정 길이이며 요소타입이 미리 정의된 배열
-var tuple = ['홍길동', 20];
+let tuple = ['홍길동', 20];
 // any
 // 아무타입이나 허용
-var anyType = 100;
+let anyType = 100;
 anyType = '홍길동';
 // null
-var nul = null;
+let nul = null;
 // nul = 1;
 // undefined
-var und = undefined;
+let und = undefined;
 // und = 1;
 // function
 // 파라미터와 반환타입에 타입 지정

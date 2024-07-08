@@ -10,7 +10,7 @@
   path intellisense 플러그인
   todo highlight 플러그인
 
-* npm 초기화 및 typescript 설치
+* npm 초기화 및 typescript 설치`
 - (터미널) npm init -y
 - (터미널) npm install typescript -D
 
